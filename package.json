@@ -1,0 +1,24 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "Source Code for Introduction to Angular2",
+  "main": "server.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "express": "^4.13.3",
+    "open": "0.0.5",
+    "serve-index": "^1.7.2",
+    "serve-static": "^1.10.0",
+    "systemjs": "^0.19.9"
+  },
+  "scripts": {
+    "start": "PORT=8080 node bin/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-st32lth:st32lth/angular2-intro.git"
+  },
+  "author": "Stealth <st32lth@gmail.com> (http://github.com/st32lth)",
+  "license": "ISC"
+}

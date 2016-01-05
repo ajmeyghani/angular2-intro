@@ -22,7 +22,7 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
             HelloAngular = (function () {
                 function HelloAngular() {
                     console.log('constructor called');
-                    this.name = 'NG';
+                    this.name = 'NG2!';
                 }
                 HelloAngular.prototype.ngOnInit = function () { console.log('component initialized'); };
                 HelloAngular = __decorate([
@@ -38,4 +38,3 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
         }
     }
 });
-//# sourceMappingURL=main.js.map

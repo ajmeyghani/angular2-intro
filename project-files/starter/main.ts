@@ -8,7 +8,7 @@ import {bootstrap} from 'angular2/platform/browser';
 
 class HelloAngular implements OnInit  {
   name: string;
-  constructor() { console.log('constructor called'); this.name = 'NG'; }
+  constructor() { console.log('constructor called'); this.name = 'NG2!';  }
   ngOnInit() { console.log('component initialized'); }
 }
 
