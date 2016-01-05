@@ -1,3 +1,3 @@
-# Introduction to Angular2
+# Introduction to Angular 2
 
-Source Code for Introduction to Angular2
+Source Code for Introduction to Angular 2
