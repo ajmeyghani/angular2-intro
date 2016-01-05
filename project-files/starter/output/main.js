@@ -19,17 +19,15 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
                 browser_1 = browser_1_1;
             }],
         execute: function() {
-            //
             HelloAngular = (function () {
                 function HelloAngular() {
                     console.log('constructor called');
-                    this.name = 'NG';
                 }
                 HelloAngular.prototype.ngOnInit = function () { console.log('component initialized'); };
                 HelloAngular = __decorate([
                     core_1.Component({
                         selector: 'app',
-                        template: "<h1> Hello {{name}} </h1> "
+                        template: "<h1> hello angular </h1> "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], HelloAngular);

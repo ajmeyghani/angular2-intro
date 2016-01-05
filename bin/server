@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+var path = require('path');
+var express = require('express');
+var app = express();
+var serveIndex = require('serve-index');
+var serveStatic = require('serve-static')
+
+/* static routes */
+app.use('/', serveIndex('.', {'icons': true}));
+/* the server root is the code folder
+  When you use a script tag with `/node_modules`, you are pointing
+  to `code/node_modules`
+
+  But if you use `./node_modules` you are referencing the node_modules
+  in the chapter folder itself, and not the root of the project.
+ */
+app.use(serveStatic('.', {
+  'index': ['index.html', 'index.htm']
+}));
+
+// app.all(/^\/(?!api).*/, function(req, res){
+//   res.sendFile('index.html', {root: serverSettings.client });
+// });
+
+/*
+  Defining some fake api endpoints.
+*/
+app.get('/api', function(req, res){
+  res.json({
+    "name": "amin"
+  })
+});
+
+var port = process.env.PORT || 8760;
+app.listen(port, function () { console.log('Listeningn on ', port); require('open')('http://localhost:' + port)  });
