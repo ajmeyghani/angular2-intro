@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome Debugger",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080",
+      "sourceMaps": true,
+      "webRoot": ".",
+      "runtimeExecutable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "--incognito"
+      ]
+    },
+    {
+      "name": "TS Debugger",
+      "type": "node",
+      "program": "main.ts",
+      "stopOnEntry": false,
+      "sourceMaps": true,
+      "outDir": "output"
+    }
+  ]
+}

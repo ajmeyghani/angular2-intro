@@ -1,0 +1,43 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "name": "TS Debugger",
+      "type": "node",
+      "program": "app/main.ts",
+      "stopOnEntry": false,
+      "sourceMaps": true,
+      "outDir": "app"
+    },
+    {
+      "name": "Launch index.html",
+      "type": "chrome",
+      "request": "launch",
+      "file": "index.html"
+    },
+    {
+      "name": "Launch localhost with sourcemaps",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080",
+      "sourceMaps": true,
+      "webRoot": ".",
+      "runtimeExecutable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "runtimeArgs": ["--remote-debugging-port=9222", "--incognito"]
+    },
+    {
+      "name": "Attach",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222
+    },
+    {
+      "name": "Attach to url with files served from .",
+      "type": "chrome",
+      "request": "attach",
+      "url": "http://localhost:8080/output",
+      "port": 9222,
+      "webRoot": "output"
+    }
+  ]
+}
