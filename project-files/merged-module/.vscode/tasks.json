@@ -1,0 +1,7 @@
+{
+  "version": "0.1.0",
+  "command": "tsc",
+  "showOutput": "always",
+  "isShellCommand": true,
+  "problemMatcher": "$tsc"
+}

@@ -24,9 +24,3 @@ module MyModule {
     }
   }
 }
-
-const mycar = new MyModule.Car('My Car');
-console.log(mycar.name);
-mycar.move();
-mycar.move();
-console.log(mycar.distance);

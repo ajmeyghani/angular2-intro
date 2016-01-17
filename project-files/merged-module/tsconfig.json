@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "outDir": "output",
+    "out": "output/run.js", 
+    "watch": true
+  }
+  
+}

@@ -45,9 +45,13 @@ var MyModule;
     })(Vehicle);
     MyModule.Car = Car;
 })(MyModule || (MyModule = {}));
-var mycar = new MyModule.Car('My Car');
+/// <reference path="./MyModule.ts" />
+var AliasName = MyModule;
+var mycar = new AliasName.Car('My Car');
 console.log(mycar.name);
 mycar.move();
 mycar.move();
+mycar.move();
 console.log(mycar.distance);
-//# sourceMappingURL=main.js.map
+// 
+//# sourceMappingURL=run.js.map

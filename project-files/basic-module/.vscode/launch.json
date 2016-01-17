@@ -10,6 +10,13 @@
       "outDir": "output"
     },
     {
+      "name": "TS All Debugger",
+      "type": "node",
+      "program": "output/run.js",
+      "stopOnEntry": false,
+      "sourceMaps": true
+    },
+    {
       "name": "Launch Chrome Debugger",
       "type": "chrome",
       "request": "launch",
