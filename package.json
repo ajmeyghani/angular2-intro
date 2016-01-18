@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "description": "Source Code for Introduction to Angular2",
   "main": "server.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "express": "^4.13.3",
     "open": "0.0.5",
     "serve-index": "^1.7.2",
-    "serve-static": "^1.10.0",
-    "systemjs": "^0.19.9"
+    "serve-static": "^1.10.0"
   },
   "scripts": {
     "start": "PORT=8080 node bin/server"

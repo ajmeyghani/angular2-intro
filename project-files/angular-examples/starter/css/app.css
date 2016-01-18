@@ -1,0 +1,11 @@
+body {
+  color: #000;
+}
+code {
+  font-size: 100%;
+}
+.l-loading {
+  text-align: center;
+  height: 100vh;
+  line-height: 100vh;
+}

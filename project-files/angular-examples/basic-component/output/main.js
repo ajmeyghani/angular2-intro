@@ -9,7 +9,7 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, browser_1;
-    var HelloAngular;
+    var BasicComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -19,22 +19,28 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
                 browser_1 = browser_1_1;
             }],
         execute: function() {
-            HelloAngular = (function () {
-                function HelloAngular() {
-                    console.log('constructor called');
-                    this.name = 'NG';
+            /**
+             * Define the Component.
+             */
+            BasicComponent = (function () {
+                function BasicComponent() {
+                    this.name = 'Hello Angular';
                 }
-                HelloAngular.prototype.ngOnInit = function () { console.log('component initialized'); };
-                HelloAngular = __decorate([
+                BasicComponent.prototype.ngOnInit = function () { console.log('component linked'); };
+                BasicComponent = __decorate([
                     core_1.Component({
                         selector: 'app',
-                        template: "<h1> hello {{name}} </h1> "
+                        styles: ["h1 { line-height: 100vh; text-align: center }"],
+                        template: "<h1>{{ name }}</h1>"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HelloAngular);
-                return HelloAngular;
+                ], BasicComponent);
+                return BasicComponent;
             })();
-            browser_1.bootstrap(HelloAngular, []);
+            /**
+             * Bootstrap the app with `BasicComponent`.
+             */
+            browser_1.bootstrap(BasicComponent, []);
         }
     }
 });
