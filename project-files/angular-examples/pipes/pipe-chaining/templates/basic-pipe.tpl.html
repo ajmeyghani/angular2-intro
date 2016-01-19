@@ -1,0 +1,17 @@
+<h1>Basic Pipe Example</h1>
+
+<p>Given the following template:</p>
+
+<pre>
+  <code ngNonBindable>Pixel Value: {{ '25' | pixel }} // -> 25px</code>
+</pre>
+<p>Where:</p>
+<ul>
+  <li><code>25</code>is the input to the pipe</li>
+</ul>
+
+<p>It does not take any parameters and just appends 'px' to the input:</p>
+<h1>Pixel value: {{ '25' | pixel }}</h1>
+
+<p>We can also chain pipes</p>
+<h1>Round and px: {{ 34.5 | round | pixel }}</h1>
