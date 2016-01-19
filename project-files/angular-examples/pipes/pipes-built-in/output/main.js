@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1) {
+System.register(['angular2/core', 'angular2/platform/browser'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,28 +8,39 @@ System.register(['angular2/core'], function(exports_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
-    var PixelPipe;
+    var core_1, browser_1;
+    var StarterTemplate;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (browser_1_1) {
+                browser_1 = browser_1_1;
             }],
         execute: function() {
-            PixelPipe = (function () {
-                function PixelPipe() {
+            /**
+             * Define the Component.
+             */
+            StarterTemplate = (function () {
+                function StarterTemplate() {
+                    this.name = 'Built-in Pipes';
+                    this.today = new Date();
                 }
-                PixelPipe.prototype.transform = function (input) {
-                    return input + 'px';
-                };
-                PixelPipe = __decorate([
-                    core_1.Pipe({ name: 'pixel' }), 
+                StarterTemplate = __decorate([
+                    core_1.Component({
+                        selector: 'app',
+                        templateUrl: 'templates/app.tpl.html',
+                    }), 
                     __metadata('design:paramtypes', [])
-                ], PixelPipe);
-                return PixelPipe;
+                ], StarterTemplate);
+                return StarterTemplate;
             })();
-            exports_1("PixelPipe", PixelPipe);
+            /**
+             * Bootstrap the app with `StarterTemplate`.
+             */
+            browser_1.bootstrap(StarterTemplate, []);
         }
     }
 });
-//# sourceMappingURL=pixel.pipe.js.map
+//# sourceMappingURL=main.js.map

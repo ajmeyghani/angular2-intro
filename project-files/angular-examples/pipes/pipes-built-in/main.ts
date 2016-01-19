@@ -1,7 +1,5 @@
 import {Component} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser';
-import {PixelPipe} from './pixel.pipe';
-import {RoundPipe} from './round.pipe';
 
 /**
  * Define the Component.
@@ -9,12 +7,13 @@ import {RoundPipe} from './round.pipe';
 @Component({
   selector: 'app',
   templateUrl : 'templates/app.tpl.html',
-  pipes: [PixelPipe, RoundPipe] // <- registering the pipe
 })
 class StarterTemplate  {
   private name: string;
+  private today: Date;
   constructor () {
-    this.name = 'Starter Template!!';
+    this.name = 'Built-in Pipes';
+    this.today = new Date();
   }
 }
 

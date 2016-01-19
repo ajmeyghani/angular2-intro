@@ -5,7 +5,7 @@
       "name": "Launch Chrome Debugger",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:8080/project-files/angular-examples/basic-pipe/index.html",
+      "url": "http://localhost:8080/project-files/angular-examples/pipes/pipes-built-in/index.html",
       "sourceMaps": true,
       "webRoot": ".",
       "runtimeExecutable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
