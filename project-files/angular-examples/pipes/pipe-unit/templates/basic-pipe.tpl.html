@@ -1,0 +1,15 @@
+<h1>Basic Pipe Example</h1>
+
+<p>Given the following template:</p>
+
+<pre>
+  <code ngNonBindable>Pixel Value: {{ '25' | unit:'em' }} // -> 25em</code>
+</pre>
+<p>Where:</p>
+<ul>
+  <li><code>25</code>is the input to the pipe</li>
+  <li><code>'em'</code>is the first parameter passed to the pipe</li>
+</ul>
+
+<h1>Pixel value: {{ '25' | unit:'em' }}</h1>
+<h1>Rounded % value: {{ 34.5 | round | unit:'%' }}</h1>
