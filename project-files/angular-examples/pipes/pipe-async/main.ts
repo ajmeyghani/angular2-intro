@@ -33,3 +33,29 @@ class AsyncPipeExample  {
 bootstrap(AsyncPipeExample, []);
 
 
+/* // example with observable
+// https://github.com/angular/angular/blob/master/modules/angular2/examples/core/pipes/ts/async_pipe/async_pipe_example.ts
+
+// #docregion AsyncPipeObservable
+@Component({selector: "task-cmp", template: "Time: {{ time | async }}"})
+class Task {
+  time = new Observable<number>(
+      observer => { setInterval(_ => observer.next(new Date().getTime()), 500); });
+}
+// #enddocregion
+
+@Component({
+  selector: 'example-app',
+  directives: [AsyncPipeExample],
+  template: `
+    <h1>AsyncPipe Example</h1>
+    <async-example></async-example>
+  `
+})
+export class AppCmp {
+}
+
+export function main() {
+  bootstrap(AppCmp);
+}
+*/
