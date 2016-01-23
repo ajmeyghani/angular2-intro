@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd ../.. && npm start"
   },
   "author": "Stealth <st32lth@gmail.com> (http://github.com/st32lth)",
   "license": "ISC",
