@@ -35,14 +35,12 @@ class Adder {
   constructor() {
     this.value = 0;
     this.firedEvent = '...';
-    
   }
   addOne(event) {
-  this.value += 1;
-  this.firedEvent = event + this.value;
+    this.value += 1;
+    this.firedEvent = event + this.value;
   }
 }
-
 
 
 /**
