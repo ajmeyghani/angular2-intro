@@ -33,6 +33,17 @@ app.get('/api', function(req, res){
   })
 });
 
+/**
+  Endpoint for getting a list of students
+*/
+app.get('/api/students', function(req, res){
+  res.json([
+    { "id": 1, "name": "Tom", "lastname": "Johnson"},
+    { "id": 2, "name": "Kim", "lastname": "Jacobson"},
+    { "id": 3, "name": "Liz", "lastname": "McPherson"},
+  ])
+});
+
 var port = process.env.PORT || 8760;
 app.listen(port, function () {
   console.log('Listening on Port: ', port);
