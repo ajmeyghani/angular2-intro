@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome Debugger",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080/project-files/angular-examples/directives/built-in-directives/index.html",
+      "sourceMaps": true,
+      "webRoot": ".",
+      "runtimeExecutable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "--incognito"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<h1>{{ name }}</h1>
+
+<h2>NgIf</h2>
+
+<div *ngIf="isVisible"> Visible </div>
+<div *ngIf="!isVisible"> Not Visible </div>
+
+<h2>NgFor</h2>
+
+<strong>Simple List</strong>
+
+<ul>
+  <li *ngFor="#name of names">{{ name }}</li>
+</ul>
+
+<strong>Table</strong>
+
+<table>
+  <tr>
+    <th *ngFor="#header of userHeaders"> {{ header }}</th>
+  </tr>
+  <tr *ngFor="#user of users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.permission }}</td>
+  </tr>
+</table>
+
+<strong>Table 2D ?</strong>
+
+<h2>NgSwitch</h2>
+
+<strong>Note: "'progress'", "'done'" and the binding</strong>
+
+<div><button (click)="setStatus()">Change Status</button></div>
+
+<div [ngSwitch]="status">
+  <template [ngSwitchWhen]="'progress'">In Progress</template>
+  <template [ngSwitchWhen]="'done'">Finished</template>
+  <template [ngSwitchWhen]="'error'">Error</template>
+  <template ngSwitchDefault>Unknown</template>
+</div>
