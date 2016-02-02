@@ -1,0 +1,9 @@
+<h1>{{ name }}</h1>
+
+<p *myUnless="isDone">
+  isDone ... if isDone = false
+</p>
+
+<p *myUnless="!isDone">
+  !isDone ... if isDone = true
+</p>
