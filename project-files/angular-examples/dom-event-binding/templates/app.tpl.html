@@ -1,0 +1,67 @@
+<h1>{{ name }}</h1>
+
+<div>
+  <h2>keyup</h2>
+  <input type="text" #inputField2 (keyup)="setInputFieldValue2(inputField2.value)">
+  <pre> {{ keyupValue }}</pre>
+</div>
+
+<div>
+  <h2>Input</h2>
+  <input type="text" #inputField (input)="setInputFieldValue(inputField.value)">
+  <pre> {{ inputValue }}</pre>
+</div>
+
+
+<h2>click</h2>
+
+<div>
+  <button (click)="sayHello()"> Say Hello! </button>
+  <pre>{{ hello }}</pre>
+</div>
+
+<h2>Double Click</h2>
+
+<div>
+  <button (dblclick)="sayDoubleHello()"> Say Hello! </button>
+  <pre>{{ doubleHello }}</pre>
+</div>
+
+<div>
+  <h2>Mousedown</h2>
+  <button (mousedown)="sayDownHello()">Say Hello !</button>
+  <pre>{{ downHello }}</pre>
+</div>
+
+
+<div>
+  <h2>Mouseup</h2>
+  <button (mouseup)="sayUpHello()">Say Hello !</button>
+  <pre>{{ upHello }}</pre>
+</div>
+
+
+<div>
+  <h2 (mouseenter)="sayEnterHello()" (mouseleave)="clearEnterHello()">Mouseenter/leave</h2>
+  <pre> {{ enterHello }}</pre>
+</div>
+
+
+<h1>Event Delegation</h1>
+
+<pre>{{rowClicked}}</pre>
+
+<table (click)="catchBubbledEvent($event)">
+  <tr>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+  </tr>
+</table>

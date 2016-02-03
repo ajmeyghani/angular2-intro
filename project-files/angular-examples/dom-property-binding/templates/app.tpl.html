@@ -1,0 +1,33 @@
+<h1>{{ name }}</h1>
+
+<h2>Binding to Style</h2>
+
+<div [style.textDecoration]="isDone ? 'line-through' : ''"> ToDo task </div>
+<div><button (click)="toggle()">Toggle</button></div>
+
+
+<style>
+  .collapsed {
+    color: red
+  }
+  .expanded {
+    color: blue;
+  }
+</style>
+
+
+<h2>Bind to Class Name</h2>
+<div #classExample [className]="isCollapsed ? 'collapsed' : 'expanded'">Element</div>
+<div><button (click)="toggleClass()">Toggle Class</button><span>{{ isCollapsed }}: {{ classExample.className }}</span></div>
+
+
+<h2>Bind to <code>hidden</code></h2>
+
+<div [hidden]="!isVisible">To Hide element</div>
+<div><button (click)="toggleIsVisible()">Toggle isVisible</button> <spna>{{ isVisible ? 'Visible' : 'hidden' }}</spna> </div>
+
+<h2>Bind to <code>textContent</code></h2>
+
+<div [textContent]="textValue"></div>
+<input type="text" #contentInput>
+<button (click)="setTextContent(contentInput.value)">Set Text Content</button>
