@@ -7,7 +7,7 @@
       "request": "launch",
       "url": "http://localhost:8080/project-files/angular-examples/pipes/pipes-built-in/index.html",
       "sourceMaps": true,
-      "webRoot": ".",
+      "webRoot": "${workspaceRoot}",
       "runtimeExecutable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
       "runtimeArgs": [
         "--remote-debugging-port=9222",

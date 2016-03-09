@@ -15,7 +15,7 @@
       "request": "launch",
       "url": "http://localhost:8080",
       "sourceMaps": true,
-      "webRoot": ".",
+      "webRoot": "${workspaceRoot}",
       "runtimeExecutable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
       "runtimeArgs": [
         "--remote-debugging-port=9222",
