@@ -1,0 +1,17 @@
+<h1>{{ name }}</h1>
+
+<h2>No Argument</h2>
+<p>Custom filter that only displays items with id less than 3</p>
+<ul>
+  <li *ngFor="#item of items | myfilter">
+    {{ item.id }}, {{ item.title }}
+  </li>
+</ul>
+
+<h2>With Argument</h2>
+<p>Filter out the item with title 'second'</p>
+<ul>
+  <li *ngFor="#item of items | myfilter: {title: 'second'}">
+    {{ item.id }}, {{ item.title }}
+  </li>
+</ul>
