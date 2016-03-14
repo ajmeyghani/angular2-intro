@@ -9,7 +9,7 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, browser_1;
-    var StarterTemplate;
+    var DatePipeExample;
     return {
         setters:[
             function (core_1_1) {
@@ -22,24 +22,24 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
             /**
              * Define the Component.
              */
-            StarterTemplate = (function () {
-                function StarterTemplate() {
-                    this.name = 'Built-in Pipes';
+            DatePipeExample = (function () {
+                function DatePipeExample() {
+                    this.name = 'Date Pipe Example';
                     this.today = new Date();
                 }
-                StarterTemplate = __decorate([
+                DatePipeExample = __decorate([
                     core_1.Component({
                         selector: 'app',
                         templateUrl: 'templates/app.tpl.html',
                     }), 
                     __metadata('design:paramtypes', [])
-                ], StarterTemplate);
-                return StarterTemplate;
+                ], DatePipeExample);
+                return DatePipeExample;
             })();
             /**
-             * Bootstrap the app with `StarterTemplate`.
+             * Bootstrap the app with `DatePipeExample`.
              */
-            browser_1.bootstrap(StarterTemplate, []);
+            browser_1.bootstrap(DatePipeExample, []);
         }
     }
 });

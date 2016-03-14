@@ -1,0 +1,9 @@
+<h1>{{ name }}</h1>
+
+<h2>{{'Slice String' | slice:2:7}}</h2>
+
+<ul>
+  <li *ngFor="#student of students | slice:0:4">
+    {{student.id}}, {{student.name}}
+  </li>
+</ul>

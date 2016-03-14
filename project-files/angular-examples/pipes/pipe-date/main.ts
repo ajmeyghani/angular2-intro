@@ -8,16 +8,16 @@ import {bootstrap} from 'angular2/platform/browser';
   selector: 'app',
   templateUrl : 'templates/app.tpl.html',
 })
-class StarterTemplate  {
+class DatePipeExample  {
   private name: string;
   private today: Date;
   constructor () {
-    this.name = 'Built-in Pipes';
+    this.name = 'Date Pipe Example';
     this.today = new Date();
   }
 }
 
 /**
- * Bootstrap the app with `StarterTemplate`.
+ * Bootstrap the app with `DatePipeExample`.
  */
-bootstrap(StarterTemplate, []);
+bootstrap(DatePipeExample, []);
