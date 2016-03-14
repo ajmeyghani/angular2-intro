@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <title>Starter Template</title>
+
+  <link rel="stylesheet" href="./css/milligram.min.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="/node_modules/systemjs/dist/system.src.js"></script>
+  <script src="/node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+
+  <script>
+    System.config({
+    packages: {
+      output: {
+        format: 'register',
+        defaultExtension: 'js'
+      }
+    }
+  });
+  System.import('output/main')
+  .then(null, console.error.bind(console));
+
+  </script>
+
+</head>
+
+<body>
+  <app>
+    <div class="l-loading"><p>Loading ...</p></div>
+  </app>
+</body>
+
+</html>
